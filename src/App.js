@@ -4,7 +4,7 @@ import SongContainer from './Container/SongContainer';
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <h1>Tunes!</h1>
       <SongContainer/>
     </>
   );

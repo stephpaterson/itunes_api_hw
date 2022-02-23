@@ -1,9 +1,17 @@
-const Song = ({artist, title}) => {
+const Song = ({artist, title, position}) => {
     return (
+        <>
         <div className="song">
-            <h3>{artist}</h3>
-            <p>{title}</p>
+            <div className="position">
+                <h2>{position}</h2>
+            </div>
+            <div>
+                <h3>{artist}</h3>
+                <p>{title}</p>
+            </div>
         </div>
+        <hr />
+        </>
     )
 }
 
