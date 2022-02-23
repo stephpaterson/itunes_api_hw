@@ -8,7 +8,7 @@ const SongList = ({songs}) => {
     // id [id][attributes]["im:id"]
     // chart position is the index?
     const songItem = songs.map((song, index)=>{
-        return <Song key={song["id"]["attributes"]["im:id"]} artist={song["im:artist"]["label"]} title={song["im:name"]["label"]} position={index+1}/>
+        return <Song key={song["id"]["attributes"]["im:id"]} artist={song["im:artist"]["label"]} title={song["im:name"]["label"]} position={index+1} image={song["im:image"][0]["label"]}/>
     })
 
     return (
